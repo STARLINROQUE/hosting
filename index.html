@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco SR - Menú Desplegable</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #c1b8b8;
+            color: #333;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #4e8586;
+            color: rgb(120, 182, 119);
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Menú de navegación */
+        .menu {
+            list-style: none;
+            padding: 0;
+            background-color: #3b8b99;
+            text-align: center;
+            margin: 0;
+        }
+
+        .menu li {
+            display: inline-block;
+            position: relative;
+        }
+
+        .menu li a {
+            display: block;
+            padding: 15px 20px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .menu li a:hover {
+            background-color: #e0eca1;
+        }
+
+        /* Estilo para el submenú desplegable */
+        .submenu .dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #abaf5c;
+            list-style: none;
+            padding: 0;
+            min-width: 200px;
+        }
+
+        .submenu .dropdown li {
+            display: block;
+        }
+
+        .submenu .dropdown li a {
+            display: block;
+            padding: 12px 20px;
+            color: white;
+            text-align: left;
+        }
+
+        .submenu .dropdown li a:hover {
+            background-color: #b5c7d8;
+        }
+
+        /* Mostrar el menú cuando el mouse pasa sobre el padre */
+        .submenu:hover .dropdown {
+            display: block;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #b1c5da;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Banco SR</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li class="submenu">
+                    <a href="#">Cuentas</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Cuenta de Ahorro</a></li>
+                        <li><a href="#">Cuenta Corriente</a></li>
+                        <li><a href="#">Cuenta Infantil</a></li>
+                    </ul>
+                </li>
+                <li class="submenu">
+                    <a href="#">Tarjetas</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Tarjeta de Crédito</a></li>
+                        <li><a href="#">Tarjeta de Débito</a></li>
+                        <li><a href="#">Tarjeta Prepagada</a></li>
+                    </ul>
+                </li>
+                <li class="submenu">
+                    <a href="#">Préstamos</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Préstamo Personal</a></li>
+                        <li><a href="#">Préstamo Hipotecario</a></li>
+                        <li><a href="#">Préstamo Automotriz</a></li>
+                    </ul>
+                </li>
+                <li class="submenu">
+                    <a href="#">Seguros</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Seguro de Vida</a></li>
+                        <li><a href="#">Seguro de Salud</a></li>
+                        <li><a href="#">Seguro de Auto</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio">
+        <h2>Bienvenido al Banco SR</h2>
+        <p>Donde cumplimos tus sueños por más pequeños que sean, y por más grandes que lo creas, con los mejores productos y servicios financieros.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Banco SR. Donde tus sueños son los nuestros.</p>
+    </footer>
+</body>
+</html>
